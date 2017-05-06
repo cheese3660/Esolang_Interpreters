@@ -21,6 +21,9 @@ do
 	if not contains(program,"0") then
 		error("INFINITE LOOP")
 	else
+		print("------------------")
+		print("Code: ",unpack(program))
+		print("Data: ",unpack(data))
 		pointer = 1
 		index = 1
 		while data[pointer] ~= nil do
@@ -38,9 +41,6 @@ do
 			end
 			index = index + 1
 		end
-			print("------------------")
-		print("Code: ",unpack(program))
-		print("Data: ",unpack(data))
 		print("Result: ", unpack(data))
 	end
 end
